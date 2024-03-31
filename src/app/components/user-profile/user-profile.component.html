@@ -1,10 +1,7 @@
-<h1>user-profile works!</h1>
-<h2>Name - {{name.toUpperCase()}}, Status - {{status.toUpperCase()}}, Salary - {{salary}}</h2>
-
-<!-- Property binding -->
-<button [disabled]=isBtnDisabled>click me</button>
-
-<!-- event binding -->
-<h3>Input - value : {{inputVal}}</h3>
-<!-- <input type="text" [value]="inputVal" (input)="onChange($event)"> -->
-<input type="text" [(ngModel)]="inputVal">
+<div>
+  @for(user of users; track users){
+    @if (user.salary > 1000) {
+      <h3>Name - {{user.name}}, Status - {{user.isSingle ? "single":"coder"}}, salary - {{user.salary}}</h3>
+    }
+  }
+</div>
