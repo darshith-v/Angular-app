@@ -1,1 +1,8 @@
-<p>user-profile works!</p>
+<h1>user-profile works!</h1>
+<h2>Name - {{name.toUpperCase()}}, Status - {{status.toUpperCase()}}, Salary - {{salary}}</h2>
+
+<!-- Property binding -->
+<button [disabled]=isBtnDisabled>click me</button>
+
+<!-- event binding -->
+<input type="text" (change)="onChange($event)">
