@@ -14,9 +14,11 @@ export class UserProfileComponent {
   status = "single"
   salary = 40000
   isBtnDisabled = false
+
+  inputVal = ''
   
   onChange(e:Event) {
     const value = (e.target as HTMLInputElement).value
-    console.log(value)
+    this.inputVal = value
   }
 }

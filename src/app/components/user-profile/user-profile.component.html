@@ -5,4 +5,6 @@
 <button [disabled]=isBtnDisabled>click me</button>
 
 <!-- event binding -->
-<input type="text" (change)="onChange($event)">
+<h3>Input - value : {{inputVal}}</h3>
+<!-- <input type="text" [value]="inputVal" (input)="onChange($event)"> -->
+<input type="text" [(ngModel)]="inputVal">
