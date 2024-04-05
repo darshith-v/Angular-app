@@ -1,4 +1,4 @@
-import { Component, Input, booleanAttribute } from '@angular/core';
+import { Component, Input, booleanAttribute, numberAttribute } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 function formateName(value: string) {
@@ -15,8 +15,11 @@ function formateName(value: string) {
   
 export class UserProfileComponent {
 
-  @Input({ alias: "userName", transform: formateName }) name = "";
-  @Input({ transform: booleanAttribute }) isSting = "";
+  @Input() message: string = "";
+  @Input() token: number = 0;
+
+  // @Input({ alias: "userName", transform: formateName }) Name = "";
+  // @Input({ transform: booleanAttribute }) isSting = "";
 
 
   // name = "darshith"

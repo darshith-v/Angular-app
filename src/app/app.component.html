@@ -1,4 +1,6 @@
-<h1>Hello world</h1>
-<app-user-profile userName="Darshith" isSingle="true" salary="60000"></app-user-profile>
+<h1>Hello world [Parent]</h1>
+<!-- <app-user-profile userName = "Darshith" isSingle="isSingle ? single : coder" salary="60000"></app-user-profile>
 <app-user-profile userName="Ravikiran" isSingle="false" salary="50000"></app-user-profile>
-<app-user-profile userName="Gurukiran" isSingle="true", salary="70000"></app-user-profile>
+<app-user-profile userName="Gurukiran" isSingle="true", salary="70000"></app-user-profile> -->
+
+<app-user-profile [message] = "messageFormate" [token] = "tokenCode"></app-user-profile>
