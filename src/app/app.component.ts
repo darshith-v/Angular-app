@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component, NgModule, EventEmitter } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
@@ -17,5 +17,11 @@ export class AppComponent {
   // ]
 
   messageFormate: string = "Hello world from child";
-  tokenCode: number = 9019104852;
+  phoneNumber: number = 9480670118;
+
+  receviedMessage: string = "";
+
+  recevingMessage(message: string): void{
+    this.receviedMessage = message;
+  }
 }

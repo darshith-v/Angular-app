@@ -3,4 +3,11 @@
 <app-user-profile userName="Ravikiran" isSingle="false" salary="50000"></app-user-profile>
 <app-user-profile userName="Gurukiran" isSingle="true", salary="70000"></app-user-profile> -->
 
-<app-user-profile [message] = "messageFormate" [token] = "tokenCode"></app-user-profile>
+<app-user-profile 
+  [message] = "messageFormate"  
+  [phone] = "phoneNumber"
+
+  (messageEvent)="recevingMessage($event)"
+></app-user-profile>
+
+<p>{{ receviedMessage }}</p>
